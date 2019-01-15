@@ -1,0 +1,30 @@
+---
+title: "CodeBook"
+output: html_document
+---
+
+1. Summary:
+
+This code book defines how the variables in the output table ("new") of the analysis are linked to the original variable names in the original data.
+
+2. Original (input) data:
+
+The original variables are described in the original dataset:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+3. New (output) data:
+
+The output only shows numerical variables from the original dataset that relate to 'means' and 'standard deviations'
+Variable names in the output table of the analysis relate to AVERAGES of the original data, by subject and activity
+Accelerometer readings are in standard gravity units 'g' (as per original dataset)
+Angular velocity vectors are measured in radians/second (as per original dataset)
+
+The names of the variables in the original dataset have been changed in the output, to make them more understandable. The mapping of 'original' to 'new' variable names is shown in the table below.
+
+```{r}
+mapping <- read.csv("mapping.csv")
+print(mapping)
+```
+
+
+

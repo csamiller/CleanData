@@ -1,0 +1,26 @@
+---
+title: "README"
+output: html_document
+---
+
+A. This analysis is based on the following dataset:
+
+Human Activity Recognition Using Smartphones Data Set
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+B. This analysis consists of the following R scripts:
+
+run_analysis.R
+
+C. The analysis consists of the following steps:
+
+1. Download the data from the web
+2. Re-construct the original training and test data sets, using descriptive activity names to name the activities
+3. Combine the training and test data sets into one
+4. Select from the combined data set only the numerical data relating to 'mean' and 'std' values
+5. Rename the columns so they are easier to understand
+6. Create the final (output) dataset which has the averages of each variable for each activity and each subject
+
+D. Outputs:
+
+The output is a table called "new"
